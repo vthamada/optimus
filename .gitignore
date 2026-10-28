@@ -1,0 +1,18 @@
+# Development SDK, dependencies, local evidence and build output
+.tools/
+**/bin/
+**/obj/
+.vs/
+.idea/
+TestResults/
+artifacts/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.dmp
+*.gguf
+*.pfx
+*.p12
+.env

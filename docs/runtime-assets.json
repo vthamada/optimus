@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Pinned development pilot; no automatic download at application startup",
+  "llama": {
+    "release": "v0.7.0",
+    "build": "b11669",
+    "archiveUrl": "https://github.com/ggml-org/llama.cpp/releases/download/b11669/llama-b11669-bin-win-cpu-x64.zip",
+    "archiveBytes": 19537886,
+    "archiveSha256": "37b3efcf962847ca869745fd4ccf7f5e7e8dacfeff9fa3523b4ca8cdc66d632b",
+    "frontend": "llama-completion.exe",
+    "frontendSha256": "a36efb43ffa55f3a861043d4bf63b28b99d40560542c07a0ea51ea2fe30eef6f",
+    "license": "MIT"
+  },
+  "model": {
+    "repository": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "filename": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "bytes": 1117320736,
+    "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "license": "Apache-2.0",
+    "downloadUrl": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+  },
+  "restic": {
+    "version": "0.19.1",
+    "archiveUrl": "https://github.com/restic/restic/releases/download/v0.19.1/restic_0.19.1_windows_amd64.zip",
+    "archiveBytes": 11237567,
+    "archiveSha256": "da948ad707ed690426473aaba2046cd61f8f90f6f0e7dab6be0d5796531de67d",
+    "executableSha256": "b0dd1fd21eea5d8fe1325f55f7118213c21f36de8a261e04c0624a5ab9fd7830",
+    "license": "BSD-2-Clause"
+  }
+}

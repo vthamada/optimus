@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Optimus.Domain/Optimus.Domain.csproj" />
+    <Project Path="src/Optimus.Application/Optimus.Application.csproj" />
+    <Project Path="src/Optimus.Infrastructure/Optimus.Infrastructure.csproj" />
+    <Project Path="src/Optimus.Cli/Optimus.Cli.csproj" />
+    <Project Path="src/Optimus.Desktop/Optimus.Desktop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Optimus.ToolFixture/Optimus.ToolFixture.csproj" />
+    <Project Path="tests/Optimus.Tests/Optimus.Tests.csproj" />
+  </Folder>
+</Solution>

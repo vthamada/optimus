@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0-windows</TargetFramework><IsPackable>false</IsPackable><IsTestProject>true</IsTestProject><UseWPF>true</UseWPF></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Optimus.Desktop/Optimus.Desktop.csproj" />
+    <ProjectReference Include="../../src/Optimus.Cli/Optimus.Cli.csproj" />
+    <ProjectReference Include="../Optimus.ToolFixture/Optimus.ToolFixture.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Optimus.Infrastructure/Optimus.Infrastructure.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio"><IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets><PrivateAssets>all</PrivateAssets></PackageReference>
+    <Using Include="Xunit" /><Using Include="System.IO" /><Using Include="System.Net.Http" />
+  </ItemGroup>
+</Project>
