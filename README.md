@@ -4,7 +4,19 @@
 
 Aplicativo Windows em desenvolvimento, com interface WPF em português e CLI. O protótipo **0.9.1** reúne diagnóstico e inventário local, seleção de fatos com modelo GGUF, backup/restauração com restic e ferramentas consultivas de manutenção.
 
-O repositório contém o código-fonte, testes e documentação. Para gerar o executável no Windows x64, siga a seção **Executar no Windows x64** e execute `scripts/dev.ps1 -Task publish`. A pasta `artifacts/app` é gerada localmente; executáveis, modelos e dados pessoais não são enviados ao Git. Ainda não há release com instalador para download.
+## Download para Windows
+
+A [pré-release 0.9.1](https://github.com/vthamada/optimus/releases/tag/v0.9.1) oferece o programa portátil, com runtime incluído:
+
+| Arquivo | Uso |
+| --- | --- |
+| [Executável Windows x64](https://github.com/vthamada/optimus/releases/download/v0.9.1/opTImus-0.9.1-windows-x64.exe) | Baixe e abra; não exige instalar .NET |
+| [Pacote ZIP](https://github.com/vthamada/optimus/releases/download/v0.9.1/opTImus-0.9.1-windows-x64.zip) | Inclui o executável, instruções, avisos e inventário das dependências |
+| [SHA256SUMS.txt](https://github.com/vthamada/optimus/releases/download/v0.9.1/SHA256SUMS.txt) | Hashes para conferir os downloads |
+
+O protótipo é uma **pré-release sem assinatura digital**, validada em Windows 11 x64. O `.exe` é portátil, não é instalador. Na primeira abertura, o runtime extrai componentes para uma pasta temporária. IA, restic, smartctl e CDB são configurados separadamente e não acompanham o download. Consulte as [notas e limites da release](docs/releases/v0.9.1.md).
+
+O repositório contém código-fonte, testes e documentação. Para gerar a pasta executável, siga **Executar no Windows x64** e use `scripts/dev.ps1 -Task publish`. Binários e dados pessoais ficam fora do Git; os pacotes de distribuição são anexos da release.
 
 ## Começar pela interface
 
@@ -107,6 +119,6 @@ Backup de arquivos não é imagem do sistema. O fluxo inicial exige repositório
 
 A revisão de interface está em [validação 0.9.1](docs/validation-ui-0.9.1.md). Os checks dos coletores e suas limitações estão em [validação 0.9](docs/validation-0.9.md); as validações [0.8](docs/validation-0.8.md), [0.7](docs/validation-0.7.md), [0.6](docs/validation-0.6.md), [0.5](docs/validation-0.5.md), [0.4](docs/validation-0.4.md), [0.3](docs/validation-0.3.md), [0.2](docs/validation-0.2.md) e [0.1](docs/validation.md) permanecem como histórico. Código local, GitHub atualizado e produto distribuído são estados separados.
 
-`.tools/`, modelos, bancos, evidências e binários não são versionados. O código próprio ainda não tem uma licença de distribuição escolhida. Distribuição pública exige revisão das licenças efetivamente incluídas, SBOM, assinatura, instalador e piloto de hardware.
+`.tools/`, modelos, bancos, evidências e binários não são versionados. A licença do código próprio ainda não foi definida. A pré-release portátil inclui avisos das dependências e inventário de componentes (SBOM); assinatura digital, instalador e piloto mais amplo de hardware continuam pendentes. Os avisos de terceiros não atribuem uma licença ao código próprio do projeto.
 
 As verificações de integridade não são iniciadas ao abrir o app. A prévia informa executável, argumentos, digest, contexto e caminho do journal. Nenhum código de saída é convertido automaticamente em laudo de saúde. A implementação usa catálogos fixos de comandos e preserva bytes/codificações das ferramentas nativas; não oferece terminal à IA. Consulte docs/local-tools.md antes de executar uma verificação em contexto elevado.
